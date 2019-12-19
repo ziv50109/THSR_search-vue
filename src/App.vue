@@ -1,28 +1,41 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-container>
+      <News />
+      <Panel />
+    </v-container>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import Panel from '@/components/Panel/Panel'
+import News from '@/components/News'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
-    HelloWorld,
-  },
-};
+    Panel,
+    News
+  }
+}
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+html {
+  overflow-y: auto !important;
+}
+.mobile-show {
+  display: none;
+  @media screen and (max-width: 640px) {
+    display: block;
+  }
+}
+div.theme--light.v-data-table {
+  td, th {
+    text-align: center;
+    @media screen and (max-width: 640px) {
+      padding: 0 10px;
+    }
+  }
 }
 </style>

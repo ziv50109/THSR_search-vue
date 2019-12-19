@@ -1,4 +1,4 @@
-# thrs_search
+# THSR_search
 
 ## Project setup
 ```
@@ -7,17 +7,12 @@ yarn install
 
 ### Compiles and hot-reloads for development
 ```
-yarn run serve
+yarn run start
 ```
 
 ### Compiles and minifies for production
 ```
 yarn run build
-```
-
-### Run your tests
-```
-yarn run test
 ```
 
 ### Lints and fixes files
