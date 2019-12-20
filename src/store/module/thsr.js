@@ -87,7 +87,7 @@ export default {
       }
       const res = await getTimetable(params)
       commit('setTimetable', res.data)
-      commit('setForm', form)
+      commit('setForm', { ...form })
     },
     async getTodayDailyTrainInfo ({ commit }) {
       const res = await getTodayDailyTrainInfo()
