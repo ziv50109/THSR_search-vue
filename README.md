@@ -1,5 +1,12 @@
 # THSR_search
 
+## Dependencies
+1. vue
+2. vuex
+3. vuetify
+4. axios
+5. dayjs
+
 ## Project setup
 ```
 yarn install
@@ -19,6 +26,3 @@ yarn run build
 ```
 yarn run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -2,7 +2,7 @@ import axios from '@/libs/api.request'
 
 export const getNews = () => {
   return axios.request({
-    url: `News`,
+    url: 'News',
     params: {
       $top: 5
     },
@@ -12,7 +12,7 @@ export const getNews = () => {
 
 export const getStation = () => {
   return axios.request({
-    url: `Station`,
+    url: 'Station',
     method: 'get'
   })
 }
@@ -26,7 +26,7 @@ export const getTimetable = ({ OriginStationID, DestinationStationID, TrainDate 
 
 export const getTodayDailyTrainInfo = () => {
   return axios.request({
-    url: `DailyTrainInfo/Today`,
+    url: 'DailyTrainInfo/Today',
     method: 'get'
   })
 }

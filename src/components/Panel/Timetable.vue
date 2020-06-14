@@ -138,8 +138,6 @@ export default {
       'getTimetable'
     ]),
     async submit () {
-      // const formString = JSON.stringify(this.form)
-      // const storeFormString = JSON.stringify(this.$store.state.thsr.form)
       if (this.$refs.form.validate()) {
         await this.getTimetable({ form: this.form })
         console.log('timetableList', this.timetableList)
