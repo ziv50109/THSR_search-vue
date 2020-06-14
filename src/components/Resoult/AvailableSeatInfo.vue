@@ -38,9 +38,9 @@ export default {
   },
   data: () => ({
     seatStatus: {
-      'Available': '尚有座位',
-      'Limited': '座位有限',
-      'Full': '已無座位'
+      Available: '尚有座位',
+      Limited: '座位有限',
+      Full: '已無座位'
     }
   })
 }

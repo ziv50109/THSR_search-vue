@@ -5,6 +5,7 @@ class HttpRequest {
     this.baseUrl = baseConfig.baseUrl
     this.params = baseConfig.params
   }
+
   getInsideConfig () {
     const config = {
       baseURL: this.baseUrl,
@@ -15,6 +16,7 @@ class HttpRequest {
     }
     return config
   }
+
   interceptors (instance, url) {
     instance.interceptors.response.use(res => {
       const { data, status } = res
@@ -23,6 +25,7 @@ class HttpRequest {
       return Promise.reject(error)
     })
   }
+
   request (options) {
     const instance = axios.create()
     options = Object.assign(this.getInsideConfig(), options)
